@@ -20,7 +20,7 @@ Before you begin, ensure you have the following installed:
 
     ```bash
     git clone https://github.com/luciafalcinelli/carbon-intensity-frontend.git
-    cd your-vue-project
+    cd carbon-intensity-frontend
     ```
 
 2. **Install Dependencies**
