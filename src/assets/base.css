@@ -31,7 +31,7 @@ label {
   font-weight: bold;
 }
 
-select, 
+select,
 button[type="submit"] {
   width: 100%;
   padding: 10px;
@@ -114,17 +114,24 @@ table tr:nth-child(even) {
 }
 
 .spinner-border {
-display: inline-block;
-width: 1rem;
-height: 1rem;
-vertical-align: text-bottom;
-border: 0.25em solid currentColor;
-border-right-color: transparent;
-border-radius: 50%;
-animation: spinner-border .75s linear infinite;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite;
 }
 
 @keyframes spinner-border {
-to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
