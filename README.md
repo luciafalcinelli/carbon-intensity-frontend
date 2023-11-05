@@ -12,6 +12,7 @@ Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
 - [Git](https://git-scm.com/)
+- [Symfony CLI](https://symfony.com/download) (for running the Symfony backend)
 
 ### Installation
 
@@ -43,15 +44,29 @@ Before you begin, ensure you have the following installed:
 
     Replace `https://127.0.0.1:8000` with the URL where your Symfony backend is running.
 
+### Running the Application
+
+#### Using Symfony CLI:
+
+If you have Symfony CLI installed, you can start the backend application using:
+
+```bash
+symfony serve
+```
+
+#### Using Web Server:
+
+Configure your web server to point to the `public` directory of the Symfony application. Access the application using the configured domain or IP address.
+
 4. **Start the Development Server**
 
     ```bash
     npm run dev
     ```
 
-    This will start the local development server. Usually, the app will be served at `http://localhost:3000`.
+    This will start the local development server for the Vue frontend. Usually, the app will be served at `http://localhost:3000`.
 
 ## Usage
 
-After starting the development server, you can navigate to `http://localhost:3000` in your web browser to view the application.
+After starting the development servers for both Vue frontend and Symfony backend, you can navigate to `http://localhost:3000` in your web browser to view the application.
 
