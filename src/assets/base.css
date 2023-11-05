@@ -129,9 +129,3 @@ table tr:nth-child(even) {
     transform: rotate(360deg);
   }
 }
-
-.error-message {
-  color: red;
-  font-size: 0.9em;
-  margin-top: 5px;
-}
