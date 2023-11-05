@@ -1,51 +1,57 @@
-# carbon-intensity-frontend
+# Vue Frontend Project
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a Vue.js frontend application designed to work in conjunction with a Symfony backend. It provides a user interface for interacting with the data and services provided by the Symfony API.
 
-## Recommended IDE Setup
+## Getting Started
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Customize configuration
+### Prerequisites
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- [Git](https://git-scm.com/)
 
-## Project Setup
+### Installation
 
-```sh
-npm install
-```
+1. **Clone the Repository**
 
-### Compile and Hot-Reload for Development
+    ```bash
+    git clone https://github.com/luciafalcinelli/carbon-intensity-frontend.git
+    cd your-vue-project
+    ```
 
-```sh
-npm run dev
-```
+2. **Install Dependencies**
 
-### Compile and Minify for Production
+    Run the following command in the root directory of your project:
 
-```sh
-npm run build
-```
+    ```bash
+    npm install
+    ```
 
-### Run Headed Component Tests with [Cypress Component Testing](https://on.cypress.io/component)
+3. **Environment Variables**
 
-```sh
-npm run test:unit:dev # or `npm run test:unit` for headless testing
-```
+    Set up the `.env` file:
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+    - Create a `.env` file in the root directory.
+    - Add the following line to the file:
 
-```sh
-npm run test:e2e:dev
-```
+      ```env
+      VITE_APP_BASE_URL=https://127.0.0.1:8000
+      ```
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+    Replace `https://127.0.0.1:8000` with the URL where your Symfony backend is running.
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+4. **Start the Development Server**
 
-```sh
-npm run build
-npm run test:e2e
-```
+    ```bash
+    npm run dev
+    ```
+
+    This will start the local development server. Usually, the app will be served at `http://localhost:3000`.
+
+## Usage
+
+After starting the development server, you can navigate to `http://localhost:3000` in your web browser to view the application.
+
